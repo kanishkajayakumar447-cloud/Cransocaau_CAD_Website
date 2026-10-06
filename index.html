@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cransocaau - Professional CAD Design Training Institute offering CREO, SolidWorks, CATIA and AutoCAD training.">
+  <title>Cransocaau | CAD Design Training Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home" aria-label="Cransocaau home">
+      <span class="brand-name">Cransocaau</span>
+      <span class="brand-tag">CAD Design Training Institute</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#training">Training</a>
+      <a href="#course-finder">Course Finder</a>
+      <a href="#assessment">Skill Assessment</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-primary nav-cta" href="#contact">Enroll Now</a>
+  </div>
+</header>
+<div class="feature-nav"><div class="container"><a href="#course-finder">V1</a><a href="#assessment">V2</a><a href="#gallery">V3</a><a href="#comparison">V4</a><a href="#trainers">V5</a><a href="#career">V6</a><a href="#brochure">V7</a><a href="#smart-enquiry">V8</a><a href="#location">V9</a><a href="#testimonials">V10</a><a href="#smart-faq">V11</a><a href="#appearance">V12</a></div></div>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="eyebrow">Industry-Oriented CAD Training</span>
+      <h1>Master Professional CAD Software</h1>
+      <p>Build practical skills with hands-on training in CREO, SolidWorks, CATIA and AutoCAD.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#courses">Explore Courses</a>
+        <a class="btn btn-outline" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container narrow">
+      <span class="section-kicker">About Us</span>
+      <h2>Bridge the gap between academics and industry</h2>
+      <p class="lead">
+        Cransocaau is a professional CAD Design Training Institute offering industry-oriented
+        courses for engineering students, working professionals and job seekers. The training
+        focuses on practical learning and real-world project exposure.
+      </p>
+    </div>
+  </section>
+
+  <section id="courses" class="section section-muted">
+    <div class="container">
+      <span class="section-kicker">Our Courses</span>
+      <h2>Popular CAD Programs</h2>
+      <div class="grid cards-4">
+        <article class="card">
+          <div class="card-image gradient-creo">CREO</div>
+          <div class="card-body">
+            <h3>CREO</h3>
+            <p>3D product design, assembly, surface modelling, sheet metal and drafting.</p>
+            <button class="text-btn course-btn" data-course="CREO">View Details →</button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image gradient-sw">SolidWorks</div>
+          <div class="card-body">
+            <h3>SolidWorks</h3>
+            <p>Part modelling, assembly, simulation, drawing and rendering.</p>
+            <button class="text-btn course-btn" data-course="SolidWorks">View Details →</button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image gradient-catia">CATIA</div>
+          <div class="card-body">
+            <h3>CATIA</h3>
+            <p>Advanced surface modelling, product design and automotive applications.</p>
+            <button class="text-btn course-btn" data-course="CATIA">View Details →</button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image gradient-autocad">AutoCAD</div>
+          <div class="card-body">
+            <h3>AutoCAD</h3>
+            <p>2D drafting, 3D modelling, construction drawings and industrial design.</p>
+            <button class="text-btn course-btn" data-course="AutoCAD">View Details →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- V1.0 -->
+  <section id="course-finder" class="section feature-section"><div class="container narrow"><span class="section-kicker">V1.0 Feature</span><h2>Find the Right Course for You</h2><p class="lead">Answer a few questions and get a course recommendation.</p><div class="finder-card"><label>Goal<select id="careerGoal"><option value="">Select</option><option value="mechanical">Mechanical Design</option><option value="product">Product Design</option><option value="manufacturing">Manufacturing</option><option value="architecture">Architecture / Drafting</option><option value="automotive">Automotive Design</option></select></label><label>Experience<select id="experienceLevel"><option value="">Select</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label><label>Interest<select id="workInterest"><option value="">Select</option><option value="2d">2D Drafting</option><option value="3d">3D Modelling</option><option value="surface">Surface Modelling</option><option value="assembly">Assembly Design</option><option value="automotive">Automotive</option></select></label><button class="btn btn-primary" id="findCourseBtn">Find My Course</button><div id="courseRecommendation" class="recommendation"></div></div></div></section>
+
+  <!-- V2.0 -->
+  <section id="assessment" class="section section-muted"><div class="container"><div class="assessment-head"><span class="badge">V2.0 FEATURE</span><h2>Choose Your Course & Test Your Skills</h2><p class="lead">Choose a course and answer 10 course-specific MCQs.</p></div><div id="courseSelection" class="assessment-card"><h3>Select Your Course</h3><div class="course-options"><button onclick="selectCourse('creo')">⚙️<b>CREO</b><small>3D Product Design</small></button><button onclick="selectCourse('solidworks')">🔧<b>SolidWorks</b><small>Mechanical Design</small></button><button onclick="selectCourse('catia')">🚗<b>CATIA</b><small>Automotive Design</small></button><button onclick="selectCourse('autocad')">📐<b>AutoCAD</b><small>2D & 3D Drafting</small></button><button onclick="selectCourse('nxcad')">🏭<b>NX CAD</b><small>Industrial Design</small></button></div></div><div id="startAssessment" class="assessment-card hidden"><div id="selectedCourseIcon" class="big-icon">⚙️</div><h3 id="selectedCourseTitle">Assessment</h3><p>10 questions • 10 marks • MCQ</p><button class="btn btn-primary" onclick="startAssessment()">Start Assessment →</button> <button class="btn btn-light" onclick="backToCourses()">← Back</button></div><div id="questionContainer" class="assessment-card hidden"><div class="question-top"><b id="questionNumber">Question 1 / 10</b><span id="scoreDisplay">Answered: 0</span></div><div class="progress"><div id="progressBar"></div></div><h3 id="questionText"></h3><div id="optionsContainer" class="options"></div><div class="question-buttons"><button id="previousBtn" class="btn btn-light" onclick="previousQuestion()">← Previous</button><button id="nextBtn" class="btn btn-primary" onclick="nextQuestion()">Next →</button></div></div><div id="resultContainer" class="assessment-card hidden"><div class="big-icon">🎉</div><h3>Assessment Completed!</h3><p id="resultCourse"></p><div class="score" id="finalScore">0/10</div><div class="level" id="skillLevel">Beginner</div><p id="resultMessage"></p><p><b>Recommended Training:</b> <span id="recommendedCourse"></span></p><button class="btn btn-primary" onclick="retakeAssessment()">Retake</button> <a class="btn btn-light" href="#contact">Enquire Now</a></div></div></section>
+
+  <section class="section stats-section">
+    <div class="container">
+      <span class="section-kicker light">At a Glance</span>
+      <h2 class="light-text">Training & project exposure</h2>
+      <div class="grid stats-grid">
+        <div class="stat"><strong>500+</strong><span>Students Trained</span></div>
+        <div class="stat"><strong>1200+</strong><span>Course Completions</span></div>
+        <div class="stat"><strong>300+</strong><span>Industry Projects</span></div>
+        <div class="stat"><strong>50+</strong><span>Hiring Partners</span></div>
+      </div>
+      <p class="note">Note: Replace these figures with verified client data before launch.</p>
+    </div>
+  </section>
+
+  <section id="training" class="section">
+    <div class="container">
+      <span class="section-kicker">Training Modes</span>
+      <h2>Choose how you want to learn</h2>
+      <div class="grid cards-2">
+        <article class="feature-card">
+          <div class="icon">⌨</div>
+          <h3>Online Training</h3>
+          <ul>
+            <li>Live interactive classes</li>
+            <li>Weekend batches</li>
+            <li>Recorded sessions</li>
+            <li>Assignments</li>
+            <li>Doubt clearing</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <div class="icon">⌂</div>
+          <h3>Offline Training</h3>
+          <ul>
+            <li>Classroom learning</li>
+            <li>Hands-on practice</li>
+            <li>Mini projects</li>
+            <li>Lab access</li>
+            <li>Placement guidance</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-muted">
+    <div class="container">
+      <span class="section-kicker">Student Work</span>
+      <h2>Project Showcase</h2>
+      <div class="grid cards-3">
+        <article class="project-card"><div class="project-visual">Gearbox</div><h3>Gearbox Assembly</h3><p>Designed using SolidWorks</p></article>
+        <article class="project-card"><div class="project-visual">Wheel Rim</div><h3>Car Wheel Rim</h3><p>Designed using CATIA</p></article>
+        <article class="project-card"><div class="project-visual">Piston</div><h3>Piston Assembly</h3><p>Designed using CREO</p></article>
+        <article class="project-card"><div class="project-visual">Floor Plan</div><h3>Residential Floor Plan</h3><p>Designed using AutoCAD</p></article>
+        <article class="project-card"><div class="project-visual">Conveyor</div><h3>Conveyor System</h3><p>Industrial machine design</p></article>
+        <article class="project-card"><div class="project-visual">Robotic Arm</div><h3>Robotic Arm</h3><p>Final year project</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="section-kicker">Career Support</span>
+      <h2>From learning to career readiness</h2>
+      <div class="grid cards-3">
+        <div class="small-card"><h3>Resume Building</h3><p>Create ATS-friendly resumes.</p></div>
+        <div class="small-card"><h3>Mock Interviews</h3><p>Technical and HR preparation.</p></div>
+        <div class="small-card"><h3>Portfolio Development</h3><p>Build industry-ready projects.</p></div>
+        <div class="small-card"><h3>Career Guidance</h3><p>One-to-one mentoring sessions.</p></div>
+        <div class="small-card"><h3>Interview Preparation</h3><p>Company-specific preparation.</p></div>
+        <div class="small-card"><h3>Job Assistance</h3><p>Career support and guidance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container">
+      <span class="section-kicker">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <details><summary>Which CAD software is covered?</summary><p>CREO, SolidWorks, CATIA and AutoCAD are currently listed on the website.</p></details>
+        <details><summary>Are online and offline classes available?</summary><p>Yes. Both training modes are presented on the website.</p></details>
+        <details><summary>Do students work on projects?</summary><p>The website highlights mini projects and student project work as part of the learning experience.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- V3.0 -->
+  <section id="gallery" class="section"><div class="container"><span class="section-kicker">V3.0 Feature</span><h2>3D Project Gallery</h2><p class="lead">Explore student work and filter by software.</p><div class="filters"><button class="active" data-filter="all">All</button><button data-filter="CREO">CREO</button><button data-filter="SolidWorks">SolidWorks</button><button data-filter="CATIA">CATIA</button><button data-filter="AutoCAD">AutoCAD</button></div><div class="gallery-grid"><article class="gallery-item" data-software="CREO"><div>🧩</div><h3>Piston Assembly</h3><span>CREO</span></article><article class="gallery-item" data-software="SolidWorks"><div>🧩</div><h3>Gearbox</h3><span>SolidWorks</span></article><article class="gallery-item" data-software="CATIA"><div>🧩</div><h3>Wheel Rim</h3><span>CATIA</span></article><article class="gallery-item" data-software="AutoCAD"><div>🧩</div><h3>Floor Plan</h3><span>AutoCAD</span></article><article class="gallery-item" data-software="CREO"><div>🧩</div><h3>Robotic Arm</h3><span>CREO</span></article><article class="gallery-item" data-software="SolidWorks"><div>🧩</div><h3>Conveyor</h3><span>SolidWorks</span></article></div></div></section>
+
+  <!-- V4.0 -->
+  <section id="comparison" class="section section-muted"><div class="container"><span class="section-kicker">V4.0 Feature</span><h2>Compare Courses</h2><div class="compare"><select id="compareA"><option>CREO</option><option>SolidWorks</option><option>CATIA</option><option>AutoCAD</option><option>NX CAD</option></select><b>VS</b><select id="compareB"><option>SolidWorks</option><option>CREO</option><option>CATIA</option><option>AutoCAD</option><option>NX CAD</option></select></div><div id="comparisonResult" class="compare-result"></div></div></section>
+
+  <!-- V5.0 -->
+  <section id="trainers" class="section"><div class="container"><span class="section-kicker">V5.0 Feature</span><h2>Trainer Profiles</h2><div class="three-grid"><article class="info-card"><div class="avatar">👨‍🏫</div><h3>CAD Design Trainer</h3><p>CREO • SolidWorks • Product Design</p></article><article class="info-card"><div class="avatar">👩‍🏫</div><h3>Automotive Trainer</h3><p>CATIA • Surface Modelling</p></article><article class="info-card"><div class="avatar">👨‍💻</div><h3>Drafting Trainer</h3><p>AutoCAD • Technical Documentation</p></article></div><p class="note">Replace placeholders with verified trainer details before launch.</p></div></section>
+
+  <!-- V6.0 -->
+  <section id="career" class="section section-muted"><div class="container"><span class="section-kicker">V6.0 Feature</span><h2>Career & Placement Journey</h2><div class="steps"><div>01<strong>Learn</strong><p>Build practical CAD skills.</p></div><div>02<strong>Practice</strong><p>Complete projects.</p></div><div>03<strong>Portfolio</strong><p>Showcase your work.</p></div><div>04<strong>Prepare</strong><p>Resume and mock interviews.</p></div><div>05<strong>Apply</strong><p>Job-search guidance.</p></div></div></div></section>
+
+  <!-- V7.0 -->
+  <section id="brochure" class="section"><div class="container feature-box"><div><span class="section-kicker">V7.0 Feature</span><h2>Course Brochure</h2><p>Give visitors a downloadable course overview.</p></div><button class="btn btn-primary" id="brochureBtn">Download Brochure</button></div></section>
+
+  <!-- V8.0 -->
+  <section id="smart-enquiry" class="section section-muted"><div class="container narrow"><span class="section-kicker">V8.0 Feature</span><h2>Smart WhatsApp Enquiry</h2><div class="smart-box"><input id="waName" placeholder="Your name"><select id="waCourse"><option>CREO</option><option>SolidWorks</option><option>CATIA</option><option>AutoCAD</option><option>NX CAD</option></select><select id="waMode"><option>Online</option><option>Offline</option><option>Either</option></select><button class="btn btn-primary" id="waBtn">Enquire on WhatsApp</button></div></div></section>
+
+  <!-- V9.0 -->
+  <section id="location" class="section"><div class="container"><span class="section-kicker">V9.0 Feature</span><h2>Training Centre Location</h2><div class="location"><div><h3>Visit Us</h3><p>Replace this text with the client's verified address, landmark and timings.</p><a class="btn btn-primary" href="https://www.google.com/maps" target="_blank">Open Maps</a></div><div class="map-box">📍<small>Google Maps embed goes here</small></div></div></div></section>
+
+  <!-- V10.0 -->
+  <section id="testimonials" class="section section-muted"><div class="container"><span class="section-kicker">V10.0 Feature</span><h2>Student Testimonials</h2><div class="three-grid"><article class="info-card">★★★★★<p>“Verified student testimonial goes here.”</p><b>Student Name</b></article><article class="info-card">★★★★★<p>“Verified project-learning testimonial goes here.”</p><b>Student Name</b></article><article class="info-card">★★★★★<p>“Verified career-support testimonial goes here.”</p><b>Student Name</b></article></div></div></section>
+
+  <!-- V11.0 -->
+  <section id="smart-faq" class="section"><div class="container narrow"><span class="section-kicker">V11.0 Feature</span><h2>Smart FAQ Search</h2><input id="faqSearch" class="faq-search" placeholder="Search your question..."><div id="faqList" class="faq"><details><summary>Which software is covered?</summary><p>CREO, SolidWorks, CATIA, AutoCAD and the assessment includes NX CAD.</p></details><details><summary>Are online and offline classes available?</summary><p>Yes, both modes are presented on the website.</p></details><details><summary>Can beginners join?</summary><p>Yes. The site provides course selection and skill assessment for different levels.</p></details><details><summary>How do I enquire?</summary><p>Use the contact form or smart WhatsApp enquiry.</p></details></div></div></section>
+
+  <!-- V12.0 -->
+  <section id="appearance" class="section section-muted"><div class="container feature-box"><div><span class="section-kicker">V12.0 Feature</span><h2>Dark / Light Mode</h2><p>Let visitors choose their preferred appearance.</p></div><button class="btn btn-primary" id="themeBtn">🌙 Toggle Theme</button></div></section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div>
+        <span class="section-kicker">Contact</span>
+        <h2>Start your learning journey</h2>
+        <p>Send an enquiry and the training team can follow up with course and batch details.</p>
+        <a class="btn btn-primary" href="https://wa.me/919999999999?text=Hello%20Cransocaau%2C%20I%20would%20like%20to%20know%20about%20your%20CAD%20courses." target="_blank" rel="noopener">WhatsApp Us</a>
+        <p class="note">Replace the WhatsApp number and message with the client's real contact details before launch.</p>
+      </div>
+
+      <form id="enquiryForm" class="form-card">
+        <label>Name<input name="name" type="text" required placeholder="Your name"></label>
+        <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
+        <label>Phone<input name="phone" type="tel" required placeholder="Phone number"></label>
+        <label>Course
+          <select name="course" required>
+            <option value="">Select a course</option>
+            <option>CREO</option><option>SolidWorks</option><option>CATIA</option><option>AutoCAD</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="5" placeholder="Tell us what you would like to learn"></textarea></label>
+        <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        <p id="formStatus" class="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>Cransocaau</strong><span>Professional CAD Design Training Institute</span></div>
+    <p>© 2026 Cransocaau. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="modal" id="courseModal" aria-hidden="true">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" aria-label="Close">×</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <a class="btn btn-primary" href="#contact" id="modalContact">Enquire Now</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
