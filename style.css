@@ -43,7 +43,7 @@ body.dark .brand-name{color:#fff}.body.dark .brand-tag{color:#b8c8d8}
 .nav-cta {
   background: rgb(142, 98, 81);
   color: black;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 .site-header .nav-cta:hover {
