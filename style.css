@@ -33,7 +33,7 @@ body.dark .btn-light{background:#223b50;color:#eef4fb}
 body.dark .site-header{background:#0d2031;border-color:#29445a}
 .nav-wrap{min-height:76px;display:flex;align-items:center;gap:25px}
 .brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.15;margin-right:auto}
-.brand-name{font-size:22px;font-weight:800;color:black}
+.brand-name{font-size:22px;font-weight:800;color:lightgoldenrodyellow}
 .brand-tag{font-size:11px;color:lightcyan;font-weight:600}
 body.dark .brand-name{color:#fff}.body.dark .brand-tag{color:#b8c8d8}
 .nav{display:flex;align-items:center;gap:18px}
