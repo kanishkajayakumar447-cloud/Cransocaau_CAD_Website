@@ -41,7 +41,7 @@ body.dark .brand-name{color:#fff}.body.dark .brand-tag{color:#b8c8d8}
 .nav a:hover{color:black}
 .menu-toggle{display:none;border:0;background:#eef3f7;color:#19344d;border-radius:9px;padding:9px 12px;font-size:20px;cursor:pointer}
 .nav-cta {
-  background: lightcoral;
+  background: lightsalmon;
   color: black;
   border: 1px solid white;
 }
