@@ -40,7 +40,16 @@ body.dark .brand-name{color:#fff}.body.dark .brand-tag{color:#b8c8d8}
 .nav a{color:lightcyan;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}
 .nav a:hover{color:black}
 .menu-toggle{display:none;border:0;background:#eef3f7;color:#19344d;border-radius:9px;padding:9px 12px;font-size:20px;cursor:pointer}
-.nav-cta{white-space:nowrap}
+.nav-cta {
+  background: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.site-header .nav-cta:hover {
+  background: #f2f2f2;
+  color: black;
+}
 
 .feature-nav{background:#f0f4f8;border-bottom:1px solid #dbe4ec;position:relative;z-index:900}
 .feature-nav .container{display:flex;gap:15px;padding:8px 0;overflow:auto}
