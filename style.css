@@ -48,7 +48,7 @@ body.dark .brand-name{color:#fff}.body.dark .brand-tag{color:#b8c8d8}
 
 .site-header .nav-cta:hover {
   background: #f2f2f2;
-  color: black;
+  color: lightgrey;
 }
 
 .feature-nav{background:#f0f4f8;border-bottom:1px solid #dbe4ec;position:relative;z-index:900}
