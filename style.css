@@ -29,7 +29,7 @@ body.dark .btn-light{background:#223b50;color:#eef4fb}
 .btn-light{background:#e9eff4;color:#19344d}
 .btn-outline{border:2px solid #ff8500;color:#ff8500;background:transparent}
 
-.site-header{position:sticky;top:0;z-index:1000;background:#8B4513;border-bottom:1px solid #e5ebf0;box-shadow:0 4px 18px rgba(15,39,64,.06)}
+.site-header{position:sticky;top:0;z-index:1000;background:#4a2409;border-bottom:1px solid #e5ebf0;box-shadow:0 4px 18px rgba(15,39,64,.06)}
 body.dark .site-header{background:#0d2031;border-color:#29445a}
 .nav-wrap{min-height:76px;display:flex;align-items:center;gap:25px}
 .brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.15;margin-right:auto}
