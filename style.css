@@ -46,10 +46,7 @@ body.dark .brand-name{color:#fff}.body.dark .brand-tag{color:#b8c8d8}
   border: 1px solid #56494C;
 }
 
-.site-header .nav-cta:hover {
-  background: #f2f2f2;
-  color: lightgrey;
-}
+
 
 .feature-nav{background:#f0f4f8;border-bottom:1px solid #dbe4ec;position:relative;z-index:900}
 .feature-nav .container{display:flex;gap:15px;padding:8px 0;overflow:auto}
