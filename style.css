@@ -2050,3 +2050,21 @@ body.dark .feature-box h3 {
 #gallery .gallery-grid .gallery-item[hidden] {
     display: none !important;
 }
+
+
+/* Remove background behind 3D Project Gallery images */
+#gallery .gallery-item img,
+#gallery .gallery-card img,
+#gallery .project-card img,
+#gallery img {
+    background: transparent;
+    mix-blend-mode: multiply;
+}
+
+/* Remove background from the image container */
+#gallery .gallery-item,
+#gallery .gallery-card,
+#gallery .project-card {
+    background: transparent;
+}
+
