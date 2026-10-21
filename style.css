@@ -2051,20 +2051,21 @@ body.dark .feature-box h3 {
     display: none !important;
 }
 
-
-/* Remove background behind 3D Project Gallery images */
+/* Remove blue background behind gallery images */
 #gallery .gallery-item img,
 #gallery .gallery-card img,
 #gallery .project-card img,
-#gallery img {
-    background: transparent;
-    mix-blend-mode: multiply;
+#gallery .gallery-grid img {
+    background-color: transparent !important;
+    mix-blend-mode: normal;
 }
 
-/* Remove background from the image container */
+/* Remove blue background from image wrappers */
 #gallery .gallery-item,
 #gallery .gallery-card,
-#gallery .project-card {
-    background: transparent;
+#gallery .project-card,
+#gallery .gallery-grid > div {
+    background-color: transparent !important;
 }
+
 
