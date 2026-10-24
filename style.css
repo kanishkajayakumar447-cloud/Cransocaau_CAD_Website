@@ -25,21 +25,29 @@ body {
 }
 
 :root {
+    /* Core palette: fixed espresso-brown header + royal jewel tones */
     --brown: #3B2115;
     --brown-light: #543426;
-    --gold: #D9AD73;
-    --gold-light: #EBCB9D;
-    --blue: #3478A8;
-    --blue-dark: #245B82;
-    --blue-light: #EAF2F8;
+    --gold: #D9B779;
+    --gold-light: #E8D8BD;
+    --green: #153B21;
+    --green-light: #245331;
+    --navy: #203864;
+    --navy-light: #2E4C7C;
+    --plum: #59365D;
+    --burgundy: #702D3C;
+    --teal: #176B68;
     --background: #FFFFFF;
     --surface: #FFFFFF;
-    --surface-muted: #F4F7FA;
-    --text: #263746;
-    --text-muted: #536779;
-    --border: #DCE5EC;
-    --shadow: 0 8px 25px rgba(35, 58, 77, 0.08);
-    --shadow-hover: 0 14px 35px rgba(35, 58, 77, 0.14);
+    --surface-muted: #E5EFE5;
+    --blue: #176B68;
+    --blue-dark: #203864;
+    --blue-light: #E7EFF9;
+    --text: #30343B;
+    --text-muted: #646B73;
+    --border: #DCE3DD;
+    --shadow: 0 8px 25px rgba(21, 59, 33, 0.08);
+    --shadow-hover: 0 14px 35px rgba(21, 59, 33, 0.14);
     --radius: 14px;
     --transition: 0.25s ease;
 }
@@ -47,13 +55,13 @@ body {
 /* ---------- DARK MODE ---------- */
 
 body.dark {
-    --background: #0D1924;
-    --surface: #142433;
-    --surface-muted: #192D3E;
-    --text: #EDF4FA;
-    --text-muted: #B5C5D3;
-    --border: #2B4052;
-    --blue-light: #192D3E;
+    --background: #17251B;
+    --surface: #223328;
+    --surface-muted: #26392B;
+    --text: #F5F3ED;
+    --text-muted: #D0D7CF;
+    --border: #405445;
+    --blue-light: #26392B;
     --shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
     --shadow-hover: 0 14px 35px rgba(0, 0, 0, 0.28);
 
@@ -2000,7 +2008,7 @@ body.dark .feature-box h3 {
 #gallery .gallery-image {
     display: flex;
     width: 100%;
-    height: 350px; /* Change this value to resize the image area */
+    height: 320px; /* Change this value to resize the image area */
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
@@ -2076,4 +2084,379 @@ body.dark .feature-box h3 {
 /* Hide filtered gallery items */
 #gallery .gallery-grid .gallery-item[hidden] {
     display: none !important;
+}
+
+
+/* =========================================================
+   ROYAL + DELICATE COLOR SYSTEM — CRANSOCAAU CAD WEBSITE
+   Header remains espresso brown: #3B2115
+   ========================================================= */
+
+:root {
+    --sage-pale: #E5EFE5;
+    --beige-pale: #F2E7DA;
+    --blue-pale: #E7EFF9;
+    --lavender-pale: #F0E8F3;
+    --rose-pale: #F7E8EB;
+    --aqua-pale: #E1F1EF;
+    --champagne-pale: #F5EBD8;
+    --gray-pale: #ECEFF2;
+    --gold-border: #E5D0A9;
+    --rose-border: #E8C8D0;
+    --lavender-border: #D8C5DE;
+    --blue-border: #C1D3EC;
+    --sage-border: #B8D0BA;
+}
+
+body {
+    color: #30343B;
+    background: #FFFFFF;
+}
+
+/* Header: preserve the exact requested brown */
+.site-header,
+.footer {
+    background: #3B2115;
+    color: #F8F3EA;
+}
+
+.brand-name,
+.nav a,
+.menu-toggle,
+.footer h3,
+.footer h4,
+.footer .brand-name {
+    color: #F8F3EA;
+}
+
+.brand-tag,
+.footer .brand-tag {
+    color: #E6C9A8;
+}
+
+.nav a:hover,
+.footer a:hover {
+    color: #D9B779;
+}
+
+.nav .nav-cta,
+.btn-primary.nav-cta {
+    background: #D9B779;
+    color: #3B2115;
+}
+
+.nav .nav-cta:hover,
+.btn-primary.nav-cta:hover {
+    background: #E8D8BD;
+    color: #3B2115;
+}
+
+/* Main buttons and links */
+.btn-primary {
+    background: #153B21;
+    color: #FFFFFF;
+    border-color: #153B21;
+}
+
+.btn-primary:hover {
+    background: #245331;
+    border-color: #245331;
+    color: #FFFFFF;
+}
+
+.btn-outline {
+    color: #153B21;
+    border-color: #153B21;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    color: #153B21;
+    background: #E5EFE5;
+    border-color: #153B21;
+}
+
+.btn-light {
+    color: #3B2115;
+    background: #F2E7DA;
+    border-color: #D8C6B5;
+}
+
+.btn-light:hover {
+    background: #E8D8BD;
+    color: #3B2115;
+}
+
+.text-btn,
+a:not(.btn):not(.brand) {
+    transition: color 0.25s ease;
+}
+
+.text-btn,
+.card a,
+.feature-card a,
+.project-card a {
+    color: #245331;
+}
+
+/* Different section backgrounds, using existing page section IDs/classes */
+#home.hero { background-color: #F8F3EA; }
+#about { background: #E5EFE5; }
+#courses { background: #E7EFF9; }
+#course-finder { background: #F2E7DA; }
+#assessment { background: #F0E8F3; }
+.stats-section { background: #153B21; color: #FFFFFF; }
+#training { background: #FFFFFF; }
+#projects { background: #F7E8EB; }
+#projects + .section { background: #F5EBD8; }
+#gallery { background: #E1F1EF; }
+#comparison { background: #E7EFF9; }
+#trainers { background: #F0E8F3; }
+#brochure { background: #F2E7DA; }
+#smart-enquiry { background: #E5EFE5; }
+#location { background: #FFFFFF; }
+#testimonials { background: #F7E8EB; }
+#smart-faq { background: #ECEFF2; }
+#contact { background: #F2E7DA; }
+
+/* Consistent headings and readable supporting text */
+h1, h2, h3, h4 {
+    color: #153B21;
+}
+
+.section-kicker {
+    color: #245331;
+}
+
+.lead,
+.card-body p,
+.feature-card p,
+.project-card p,
+.small-card p {
+    color: #646B73;
+}
+
+#courses h2, #courses h3,
+#comparison h2, #comparison h3,
+#location h2 {
+    color: #203864;
+}
+
+#assessment h2, #assessment h3,
+#trainers h2, #trainers h3 {
+    color: #59365D;
+}
+
+#projects h2, #projects h3,
+#testimonials h2, #testimonials h3 {
+    color: #702D3C;
+}
+
+#gallery h2, #gallery h3 {
+    color: #176B68;
+}
+
+#course-finder h2, #course-finder h3,
+#contact h2, #contact h3,
+#brochure h2, #brochure h3 {
+    color: #3B2115;
+}
+
+/* Cards remain white for clarity, with subtle colored borders */
+.card,
+.feature-card,
+.project-card,
+.small-card,
+.info-card,
+.form-card,
+.finder-card,
+.assessment-card,
+.smart-box,
+.feature-box,
+.modal-panel,
+.compare-result,
+.gallery-item,
+.faq details,
+.location > div,
+.testimonial-card,
+.stat-card {
+    background: #FFFFFF;
+    color: #30343B;
+    border-color: #DCE3DD;
+}
+
+#courses .card { border-color: #C1D3EC; }
+#projects .project-card { border-color: #E8C8D0; }
+#gallery .gallery-item { border-color: #B8D8D4; }
+#trainers .info-card { border-color: #D8C5DE; }
+#testimonials .testimonial-card { border-color: #E8C8D0; }
+#course-finder .finder-card,
+#contact .form-card,
+#smart-enquiry .smart-box { border-color: #D8C6B5; }
+
+.card:hover,
+.feature-card:hover,
+.project-card:hover,
+.small-card:hover,
+.info-card:hover,
+.gallery-item:hover {
+    border-color: #98733B;
+    box-shadow: 0 14px 35px rgba(21, 59, 33, 0.14);
+}
+
+/* CAD course cards: coordinated pastel tones */
+#courses .card:nth-child(1) { border-top: 4px solid #153B21; }
+#courses .card:nth-child(2) { border-top: 4px solid #203864; }
+#courses .card:nth-child(3) { border-top: 4px solid #59365D; }
+#courses .card:nth-child(4) { border-top: 4px solid #98733B; }
+
+#courses .card:nth-child(1) .card-body h3 { color: #153B21; }
+#courses .card:nth-child(2) .card-body h3 { color: #203864; }
+#courses .card:nth-child(3) .card-body h3 { color: #59365D; }
+#courses .card:nth-child(4) .card-body h3 { color: #705321; }
+
+/* Inputs, selects and search boxes */
+input, select, textarea {
+    color: #30343B;
+    background: #FFFFFF;
+    border-color: #BCCABD;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #646B73;
+    opacity: 1;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #98733B;
+    outline: 3px solid rgba(152, 115, 59, 0.16);
+}
+
+/* Assessment, progress and recommendation details */
+#assessment .course-options button,
+#assessment .options button {
+    background: #FFFFFF;
+    color: #30343B;
+    border-color: #D8C5DE;
+}
+
+#assessment .course-options button:hover,
+#assessment .options button:hover {
+    background: #F0E8F3;
+    border-color: #59365D;
+}
+
+.progress,
+#assessment .progress {
+    background: #E5EFE5;
+}
+
+#progressBar {
+    background: #153B21;
+}
+
+.recommendation,
+#courseRecommendation {
+    background: #E5EFE5;
+    color: #153B21;
+    border-color: #B8D0BA;
+}
+
+/* Dark green statistics band */
+.stats-section h2,
+.stats-section h3,
+.stats-section .section-kicker,
+.stats-section .stat strong,
+.stats-section .stat span {
+    color: #FFFFFF;
+}
+
+.stats-section .stat {
+    background: #245331;
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Footer remains deep brown as requested */
+.footer p { color: #E6DCD4; }
+.footer a { color: #F2E7DA; }
+.footer-bottom { border-color: rgba(248,243,234,0.22); }
+
+/* Accessible keyboard focus */
+:focus-visible {
+    outline: 3px solid #98733B;
+    outline-offset: 3px;
+}
+
+/* Respect the existing dark-mode switch while keeping the new palette coherent */
+body.dark {
+    --background: #17251B;
+    --surface: #223328;
+    --surface-muted: #26392B;
+    --text: #F5F3ED;
+    --text-muted: #D0D7CF;
+    --border: #405445;
+    background: var(--background);
+    color: var(--text);
+}
+
+body.dark .section,
+body.dark #about,
+body.dark #courses,
+body.dark #course-finder,
+body.dark #assessment,
+body.dark #training,
+body.dark #projects,
+body.dark #gallery,
+body.dark #comparison,
+body.dark #trainers,
+body.dark #brochure,
+body.dark #smart-enquiry,
+body.dark #location,
+body.dark #testimonials,
+body.dark #smart-faq,
+body.dark #contact {
+    background: var(--background);
+    color: var(--text);
+}
+
+body.dark .card,
+body.dark .feature-card,
+body.dark .project-card,
+body.dark .small-card,
+body.dark .info-card,
+body.dark .form-card,
+body.dark .finder-card,
+body.dark .assessment-card,
+body.dark .smart-box,
+body.dark .feature-box,
+body.dark .modal-panel,
+body.dark .compare-result,
+body.dark .gallery-item,
+body.dark .faq details {
+    background: var(--surface);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark .lead,
+body.dark .card-body p,
+body.dark .feature-card p,
+body.dark .project-card p,
+body.dark .small-card p {
+    color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
