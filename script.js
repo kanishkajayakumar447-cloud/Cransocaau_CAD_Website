@@ -301,3 +301,103 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/* =========================================================
+   100% POLISH: ANIMATED STATS, LIGHTBOX & SCROLL ACTIONS
+   ========================================================= */
+
+// 1. Back to Top Button visibility
+const backToTopBtn = document.getElementById("backToTop");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    backToTopBtn?.classList.add("visible");
+  } else {
+    backToTopBtn?.classList.remove("visible");
+  }
+});
+backToTopBtn?.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// 2. Animated Stats Counter (triggers when scrolled into view)
+const statsSection = document.querySelector(".stats-section");
+let statsCounted = false;
+
+if (statsSection) {
+  const statNumbers = [
+    { el: statsSection.querySelectorAll(".stat strong")[0], target: 500, suffix: "+" },
+    { el: statsSection.querySelectorAll(".stat strong")[1], target: 1200, suffix: "+" },
+    { el: statsSection.querySelectorAll(".stat strong")[2], target: 300, suffix: "+" },
+    { el: statsSection.querySelectorAll(".stat strong")[3], target: 50, suffix: "+" }
+  ];
+
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !statsCounted) {
+      statsCounted = true;
+      statNumbers.forEach(item => {
+        if (!item.el) return;
+        let count = 0;
+        const duration = 1500;
+        const stepTime = 20;
+        const steps = duration / stepTime;
+        const increment = item.target / steps;
+
+        const timer = setInterval(() => {
+          count += increment;
+          if (count >= item.target) {
+            item.el.textContent = item.target + item.suffix;
+            clearInterval(timer);
+          } else {
+            item.el.textContent = Math.floor(count) + item.suffix;
+          }
+        }, stepTime);
+      });
+    }
+  }, { threshold: 0.3 });
+
+  observer.observe(statsSection);
+}
+
+// 3. Project & Gallery Lightbox Preview
+const lightbox = document.getElementById("imageLightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxTitle = document.getElementById("lightboxTitle");
+const lightboxClose = document.querySelector(".lightbox-close");
+
+// Attach click to all gallery items and project cards
+document.querySelectorAll(".gallery-item, .project-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const img = card.querySelector("img");
+    const title = card.querySelector("h3");
+    if (img && lightbox && lightboxImg) {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || "CAD Preview";
+      if (lightboxTitle && title) {
+        lightboxTitle.textContent = title.textContent;
+      }
+      lightbox.classList.add("active");
+      lightbox.setAttribute("aria-hidden", "false");
+    }
+  });
+});
+
+// Close lightbox on click outside or close button
+lightboxClose?.addEventListener("click", () => {
+  lightbox?.classList.remove("active");
+  lightbox?.setAttribute("aria-hidden", "true");
+});
+
+lightbox?.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+  }
+});
+
+// Close lightbox with Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && lightbox?.classList.contains("active")) {
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+  }
+});
+
